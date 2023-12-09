@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/161/526/original/books-composition-3d-render-free-png.png" type="image/x-icon">
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="heading">
+    <h2>My Library</h2>
+    </div>
+    <div class="new">
+        <button id="new-book">New book 📗 ➕</button>
+        <button id="cancel-book">Cancel ✖️</button>
+      </div>
+      <div id="book-form">
+        <form action="">
+          <label for="book-author"
+            >author
+            <input type="text" name="author" id="book-author"/>
+          </label>
+  
+          <label for="book-title"
+            >title
+            <input type="text" name="title" id="book-title"/>
+          </label>
+  
+          <label for="book-pages"
+            >pages
+            <input type="number" name="pages" id="book-pages"/>
+          </label>
+  
+          <label for="book-cover"
+              >cover image url
+              <input type="text" name="cover" id="book-cover"/>
+          </label>
+  
+          <label for="book-status"
+            >have read the book
+            <input type="checkbox" name="read" id="book-status"/>
+          </label>
+          
+          <button type="submit" id="submit-btn">Add book</button>
+          
+          <p id="form-msg">please fill all inputs ✍🏻</p>
+
+        </form>
+      </div>
+    <div id="library"></div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
